@@ -55,3 +55,11 @@ Then for the second recursive call f(n=4), we see that dp[2] is not equal to -1,
 Similarly, for the second recursive call f(n=5), we get dp[3] as 2. Then we compute for(n=5) as 5(2+3).
 
 <img src="https://user-images.githubusercontent.com/66131928/164508895-86747040-6572-4b53-aaf3-880796d1d3cd.png"></img>
+
+### ***Tabulation***
+
+Tabulation is a ‘bottom-up’ approach where we start from the base case and reach the final answer that we want.
+
+1. Declare a *dp[]* array of size *n+1*.
+2. First initialize the base condition values, i.e i=0 and i=1 of the dp array as 0 and 1 respectively.
+3. Set an iterative loop which traverses the array( from index 2 to n) and for every index set its value as *dp[i-1] + dp[i-2]*. 
