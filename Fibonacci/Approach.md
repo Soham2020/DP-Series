@@ -63,3 +63,19 @@ Tabulation is a ‘bottom-up’ approach where we start from the base case and r
 1. Declare a *dp[]* array of size *n+1*.
 2. First initialize the base condition values, i.e i=0 and i=1 of the dp array as 0 and 1 respectively.
 3. Set an iterative loop which traverses the array( from index 2 to n) and for every index set its value as *dp[i-1] + dp[i-2]*. 
+
+### ***Space Optimization***
+
+If we closely look the relation,
+
+*dp[i] =  dp[i-1] + dp[i-2]*
+
+we see that for any i, we do need only the last two values in the array. So is there a need to maintain a whole array for it? 
+
+The answer is ‘No’. Let us call *dp[i-1]* as *prev* and *dp[i-2]* as *prev2*. Now understand the following illustration.
+
+<img src="https://user-images.githubusercontent.com/66131928/164917032-39db2822-10df-4592-be54-cf35949f1989.png"></img>
+
+1. Each iteration’s cur_i and prev becomes the next iteration’s prev and prev2 respectively.
+2. Therefore after calculating cur_i, if we update prev and prev2 according to the next step, we will always get the answer. 
+3. After the iterative loop has ended we can simply return prev as our answer.
