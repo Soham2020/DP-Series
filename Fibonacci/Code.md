@@ -1,9 +1,12 @@
 ## *Using Recursion:*
 
+```
 f(n) = f(n-1) + f(n-2)
+```
 
 ## *Memoization*
 
+```
 int n=5;
 
   vector<int> dp(n+1,-1);
@@ -20,9 +23,11 @@ int n=5;
                     
   cout<<dp[n];
               
- 
+```
+
 ## *Tabulation*
-              
+
+```
 int n=5;
   vector<int> dp(n+1,-1);
   
@@ -38,10 +43,11 @@ int n=5;
   }
                     
   cout<<dp[n]; 
+```
 
-              
 ## *Space Optimization*
-              
+
+```
   int n=5;
   
   int prev2 = 0; 
@@ -59,3 +65,4 @@ int n=5;
   }
   
   cout<<prev;
+```
