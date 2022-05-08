@@ -14,3 +14,23 @@ As the problem statement states to find the minimum energy required, two approac
 First, we will see why a greedy approach will not work?
 
 The total energy required by the frog depends upon the path taken by the frog. If the frog just takes the cheapest path in every stage it can happen that it eventually takes a costlier path after a certain number of jumps. The following example will help to understand this.
+
+Step 1: Express the problem in terms of indexes
+
+1 This can be easily done as there are array indexes [0,1,2,…, n-1].
+
+2 We can say that f(n-1) signifies the minimum amount of energy required to move from stair 0 to stair n-1. 
+
+3 Therefore f(0) simply should give us the answer as 0(base case).
+
+Step 2: Try all the choices to reach the goal.
+
+The frog can jump either by one step or by two steps. We will calculate the cost of the jump from the height array. The rest of the cost will be returned by the recursive calls that we make
+
+Step 3: Take the minimum of all the choices
+
+As the problem statement asks to find the minimum total energy, we will return the minimum of two choices of step2.
+
+Also at ind=1, we can’t try the second choice so we will only make one recursive call.
+
+The base case will be when we want to go to the 0th stair, then we have only one option.
