@@ -34,3 +34,5 @@ As the problem statement asks to find the minimum total energy, we will return t
 Also at ind=1, we can’t try the second choice so we will only make one recursive call.
 
 The base case will be when we want to go to the 0th stair, then we have only one option.
+
+<img width=350px height=300px src="https://user-images.githubusercontent.com/66131928/167454355-6070c19b-1dfc-43ef-9020-b66a07db2ba7.png"></img>
