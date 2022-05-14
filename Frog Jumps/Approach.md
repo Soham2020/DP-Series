@@ -46,3 +46,12 @@ The base case will be when we want to go to the 0th stair, then we have only one
 3. If not, then we are finding the answer for the given value for the first time, we will use the recursive relation as usual but before returning from the function, we will set dp[n] to the solution we get.
 
 <img src=https://user-images.githubusercontent.com/66131928/168103875-f677b964-5c93-4035-8c71-5bcbafdea15c.png></img>
+
+## *Tabulation*
+
+1. Declare a dp[] array of size n.
+
+2. First initialize the base condition values, i.e dp[0] as 0.
+
+3. Set an iterative loop which traverses the array( from index 1 to n-1) and for every index calculate jumpOne and jumpTwo and set dp[i] = min(jumpOne, jumpTwo).
+
