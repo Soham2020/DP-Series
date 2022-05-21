@@ -20,4 +20,4 @@ If we generalize, we are making K calls, therefore, we can set a for loop to run
 
 The final pseudo-code will be:
 
-<img src="https://user-images.githubusercontent.com/66131928/169557736-7efc0532-81dd-40f9-9d19-162530ddb534.png"></img>
+<img height=350px src="https://user-images.githubusercontent.com/66131928/169557736-7efc0532-81dd-40f9-9d19-162530ddb534.png"></img>
