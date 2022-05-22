@@ -21,3 +21,11 @@ If we generalize, we are making K calls, therefore, we can set a for loop to run
 The final pseudo-code will be:
 
 <img height=350px src="https://user-images.githubusercontent.com/66131928/169557736-7efc0532-81dd-40f9-9d19-162530ddb534.png"></img>
+
+## *Memoization*
+
+1. Create a dp[n] array initialized to -1.
+
+2. Whenever we want to find the answer of a particular value (say n), we first check whether the answer is already calculated using the dp array(i.e dp[n] != -1 ). If yes, simply return the value from the dp array.
+
+3. If not, then we are finding the answer for the given value for the first time, we will use the recursive relation as usual but before returning from the function, we will set dp[n] to the solution we get.
