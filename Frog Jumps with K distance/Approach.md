@@ -29,3 +29,11 @@ The final pseudo-code will be:
 2. Whenever we want to find the answer of a particular value (say n), we first check whether the answer is already calculated using the dp array(i.e dp[n] != -1 ). If yes, simply return the value from the dp array.
 
 3. If not, then we are finding the answer for the given value for the first time, we will use the recursive relation as usual but before returning from the function, we will set dp[n] to the solution we get.
+
+## *Tabulation approach*
+
+1. Declare a dp[] array of size n.
+
+2. First initialize the base condition values, i.e dp[0] as 0.
+
+3. Set an iterative loop which traverses the array( from index 1 to n-1) and for every index calculate jumpOne and jumpTwo and set dp[i] = min(jumpOne, jumpTwo).
